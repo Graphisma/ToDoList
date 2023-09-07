@@ -1,0 +1,206 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Urbanist', sans-serif;
+    /*background-image: url(/img/todobg_1.jpg);*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    letter-spacing: 1px;
+}
+
+/*---------------------HEADER-------------------------*/
+header {
+    width: 320px;
+    display: flex;
+    justify-content: center;
+    margin-top: 64px; 
+
+}
+
+.headerimg {
+    background-color: #ffffff00;
+    border-color:#ffffff00;
+}
+
+.headerimg img {
+    cursor: pointer;
+    width: 120px;
+    height: 120px;
+    transition: 0.3s ease-out;
+}
+
+.headerimg img:hover {
+    transform: scale(1.1);
+}
+
+
+#sep_header {
+    width: 2px;
+    height: 120px;
+    background-color: #ffffff60;
+    margin: 0 24px;
+}
+
+
+h1 {
+    font-size: 42px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #ffffff;
+}
+
+.fstButton {
+    min-width: 320px;
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    /*height: 42px;*/
+    padding: 24px 0;
+    /*background-color: #11B7CE60;*/
+    background-color: #ffffff05;
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(9px);
+    -webkit-backdrop-filter: blur(9px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 36px;
+}
+
+/*---------------------BODY-------------------------*/
+
+/*---------------------List-------------------------*/
+
+
+#list_container {
+    min-width: 320px;
+    min-height: 200px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(9px);
+    -webkit-backdrop-filter: blur(9px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    margin-bottom: 36px;
+    padding: 6px 0px 24px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#list_container_start {
+    min-width: 320px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(9px);
+    -webkit-backdrop-filter: blur(9px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    margin-bottom: 36px;
+    padding: 24px 0px 24px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+
+table {
+    width: 90%;
+    height: auto;
+    padding-left: 16px;
+    margin: 0px;
+}
+
+td {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+
+}
+
+.written_task {
+    max-width: 200px;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 400;
+    list-style: none;
+    margin: 0px 24px 0px 0px;
+}
+
+
+
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    opacity: 100%;
+    cursor: pointer;
+    padding: 24px 0px;
+    border-bottom: 1px solid #ffffff40;
+}
+
+.checkbox img {
+    width: 32px;
+    height: 32px;
+    margin-right: 24px;
+
+}
+
+.delete {
+    position: absolute;
+    right: 36px;
+}
+
+/*---------------------Input-------------------------*/
+
+input[type=text] {
+    margin:0px 12px 0px 16px;
+    width: 180px; 
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #ffffff!important;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Urbanist', sans-serif;
+    border: none;
+    background-color: #ffffff40;
+}
+
+
+input[type=submit] {
+    width: 42px;
+    height: 42px;
+    border-radius: 21px;
+    font-size: 24px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    color: #888888;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Urbanist', sans-serif;
+    border: none;
+    background-color: #ffffff;
+}
+
+
+/*---------------------FOOTER-------------------------*/
+
+.footer {
+    color:#ffffff80;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #ffffff;
+}

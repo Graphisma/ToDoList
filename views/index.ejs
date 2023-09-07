@@ -1,0 +1,23 @@
+<%- include("header.ejs") %>
+
+
+    
+    <div id="list_container_start">
+        <table id="list" name="listtable">
+            
+        </table>
+        
+        <form style="display: flex; align-items: center;" action="/tasks" method="POST">
+            <input type="text" name="task" placeholder="Write a task">
+            <input id="plusButton" type="submit" value="+">
+        </form>
+    </div>
+
+
+
+
+
+
+   
+
+<%- include("footer.ejs") %>

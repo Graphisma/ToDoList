@@ -1,0 +1,35 @@
+<%- include("header.ejs") %>
+
+
+
+
+
+<div id="list_container">
+    <table id="list" name="listtable">
+        <% if (locals.year) { %>
+            <% data.forEach(element => { %>
+                <tr>
+                    <td class="checkbox"><img class="chb_img" src="/img/unchecked.png"> <p class="written_task"><%= element.todotask %></p></td>
+                    
+                </tr>
+            
+            <% })    %>
+    
+        <%  console.log("New task added succesfully!");  %>
+        <%  } else {   %>
+        <%     console.log("empty task");  %>
+        <%  };   %> 
+              
+        </table>
+      
+
+    <form style="display: flex; align-items: center;" action="/tasks" method="POST">
+        <input type="text" name="task" placeholder="Write a task">
+        <input id="plusButton" name="myButton" type="submit" value="+">
+    </form>
+</div>
+
+
+
+
+<%- include("footer.ejs") %>
